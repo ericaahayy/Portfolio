@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins&family=Sarabun:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 100px;
+    background: hsla(158, 23%, 18%, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    border-bottom: 1px solid hsla(158, 23%, 18%, 1);
+    cursor: url('/cursor!.png'), auto;
+  }
+  
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    font-size: 1.1em;
+    color: hsla(159, 42%, 88%, 1);
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 20px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: url('path/to/your-cursor-image.png'), auto;
+}
+
+.nav-item:hover {
+    background-color: #2d483f;
+    color: #fff;
+}
+
+.nav-item.active {
+    background-color: #2d483f;
+    color: #fff;
+}
+ 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: hsla(158, 23%, 18%, 1);
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  cursor: url('/cursor!.png'), auto;
+}
+
+.header2 {
+    padding: 50px;
+    text-align: center;
+    background: hsla(158, 23%, 18%, 1);
+    color: hsla(158, 23%, 40%, 1);
+    font-size: 50px;
+    margin-top: 50px;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .header2 img{
+    width: 80%;
+    height: auto;
+    max-width: 390px; 
+}
+
+h1{
+    color: #8FBC8F;
+    font-size: 80px;
+    font-family: 'Playfair Display', serif;
+}
+p{
+    font-size: 17px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    text-align: left;
+    font-style: bold;
+    color: hsla(159, 42%, 88%, 1);
+}
+h6{
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .project {
+      width: 100%; 
+    }
+  
+    .description, .image {
+      width: 100%; 
+    }
+  
+    .image {
+      display: block; 
+      margin-bottom: 20px; 
+    }
+  }
