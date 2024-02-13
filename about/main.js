@@ -16,3 +16,19 @@ projects.forEach(function(project, index) {
         window.location.href = urls[index];
     });
 });
+
+document.getElementById('download-exe').addEventListener('click', function() {
+    // Replace '/path/to/executable.exe' with the actual path to your executable file
+    var exeUrl = '"C:/Users/erica/Downloads/test/test/Swamps to Skies.exe"';
+    // Create a temporary link element
+    var link = document.createElement('a');
+    link.href = exeUrl;
+    // Set the download attribute to specify the filename
+    link.download = 'your-executable-file-name.exe';
+    // Append the link to the body
+    document.body.appendChild(link);
+    // Trigger a click event on the link
+    link.click();
+    // Remove the link from the body
+    document.body.removeChild(link);
+});
