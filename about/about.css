@@ -74,6 +74,14 @@ body {
     max-width: 700px; 
 }
 
+.links {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin: 0 auto; 
+    max-width: 10%; 
+}
+  
 h1{
     color: #8FBC8F;
     font-size: 80px;
@@ -81,7 +89,7 @@ h1{
 }
 
 .about-container {
-    margin-top: 30px;;
+    margin-top: 20px;;
     display: flex;
     justify-content: center;
     align-items: flex-start;
