@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var openBTC = document.getElementById('openBTC');
 
     openBTC.addEventListener('click', function () {
-        var pdfUrl = '/projects/BTC.pdf';
+        var pdfUrl = 'projects/BTC.pdf';
         window.open(pdfUrl, '_blank');
     });
 });
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var openHelios = document.getElementById('openHelios');
 
     openHelios.addEventListener('click', function () {
-        var pdfUrl = '/projects/HeliosReport.pdf';
+        var pdfUrl = 'projects/HeliosReport.pdf';
         window.open(pdfUrl, '_blank');
     });
 });
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var openWine = document.getElementById('openWine');
 
     openWine.addEventListener('click', function () {
-        var pdfUrl = '/projects/DeterminingWineQuality.pdf';
+        var pdfUrl = 'projects/DeterminingWineQuality.pdf';
         window.open(pdfUrl, '_blank');
     });
 });
