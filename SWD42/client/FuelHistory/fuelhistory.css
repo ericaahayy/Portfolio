@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins&family=Sarabun:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 100px;
+  background: #074647;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: 600;
+  color: #fff;
+  user-select: none;
+  text-decoration: none;
+  border: none;
+}
+
+.logo:hover {
+  color: #1ea9ab;
+}
+
+.navigation {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 30px;
+}
+
+.navigation a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.navigation a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.nav_user {
+  width: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 16px;
+  font-size: 16px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #074647;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex_space {
+  display: flex;
+  justify-content: space-between;
+}
+
+  body {
+    background-color: #e0e0e0;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+    background-image: url(../images/gas.jpg);
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    overflow: hidden; 
+  }
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7); 
+}
+
+.container {
+  margin: 20px;
+  text-align: center;
+  border-radius: .375rem;
+}
+
+.form_container .title {
+  font-size: 25px;
+  font-weight: 1000;
+  position: relative;
+  text-align: center;
+  
+}
+
+.filters{
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.filters > * {
+  margin-bottom: 9px;
+}
+
+.form_container {
+  width: 700px;
+  max-width: 1000px;
+  position: relative;
+  padding: 25px 30px;
+  border-radius: 15px;
+  background-color: white;
+  justify-content: center;
+}
+
+.input_container {
+  margin-bottom: 20px;
+}
+
+.input_container label {
+  display: block;
+  font-weight: bold;
+}
+
+.input_container input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.history_table{
+  padding-top: 30px;
+
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2; 
+}
+
+.footer_container {
+  display: flex;
+  justify-content: center;
+  background-color: #074647;;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 25vh;
+}
+.footer_container .footer_items h2 {
+  color: #1ea9ab;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.footer_container .footer_items p {
+  font-size: 14px;
+  color: white;
+  margin-top: 0;
+}
+
+.footer_container .footer_items {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  margin-top: 20px;
+  text-decoration: none;
+}
