@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fuel Quote History</title>
-  <link rel="stylesheet" href="fuelhistory.css">
+  <link rel="stylesheet" href="/SWD42/FuelHistory/fuelhistory.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,13 +19,13 @@
   <header>
     <span class="logo">ReFUEL</span>
     <nav class="navigation">
-      <a href="SWD42/client/FuelQuoteForm/fuelquote.html" class="b">New Quote</a>
-      <a href="SWD42/client/FuelHistory/fuelhistory.html" class="b">Quote History</a>
+      <a href="/SWD42/FuelQuoteForm/fuelquote.html" class="b">New Quote</a>
+      <a href="/SWD42/FuelHistory/fuelhistory.html" class="b">Quote History</a>
       <div class="dropdown">
         <button class="dropbtn" id="myAcctBtn">My Account</button>
         <div class="dropdown-content" id="myAcctDropdown">
-          <a href="SWD42/client/Profile/profile.html">Profile</a>
-          <a href="SWD42/client/Login/login.html" id="logoutBtn">Logout</a>
+          <a href="/SWD42/Profile/profile.html">Profile</a>
+          <a href="/SWD42/Login/login.html" id="logoutBtn">Logout</a>
         </div>
       </div>
     </nav>
@@ -65,7 +65,22 @@
               </tr>
             </thead>
             <tbody id="quoteTableBody">
-              <!-- Table body will be populated by JavaScript -->
+              <tr>
+                <th>12345</th>
+                <th>20</th>
+                <th>123 Houston Street</th>
+                <th>01/01/2024</th>
+                <th>1.755</th>
+                <th>35.10</th>
+              </tr>
+              <tr>
+                <th>12349</th>
+                <th>20</th>
+                <th>123 Houston Street</th>
+                <th>01/15/2024</th>
+                <th>1.755</th>
+                <th>35.10</th>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -74,7 +89,7 @@
   </main>
 
   <!-- Include any necessary JavaScript files -->
-  <script src="fuelhistory.js"></script>
+  <script src="/SWD42/FuelHistory/fuelhistory.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   
   <footer>

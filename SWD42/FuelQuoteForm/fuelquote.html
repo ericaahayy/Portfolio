@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fuel Quote Form</title>
-  <link rel="stylesheet" href="fuelquote.css">
+  <link rel="stylesheet" href="/SWD42/FuelQuoteForm/fuelquote.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,13 +19,13 @@
   <header>
     <span class="logo">ReFUEL</span>
     <nav class="navigation">
-      <a href="SWD42/client/FuelQuoteForm/fuelquote.html" class="b">New Quote</a>
-      <a href="SWD42/client/FuelHistory/fuelhistory.html" class="b">Quote History</a>
+      <a href="/SWD42/FuelQuoteForm/fuelquote.html" class="b">New Quote</a>
+      <a href="/SWD42/FuelHistory/fuelhistory.html" class="b">Quote History</a>
       <div class="dropdown">
         <button class="dropbtn" id="myAcctBtn">My Account</button>
         <div class="dropdown-content" id="myAcctDropdown">
-          <a href="SWD42/client/Profile/profile.html">Profile</a>
-          <a href="SWD42/client/Login/login.html" id="logoutBtn">Logout</a>
+          <a href="/SWD42/Profile/profile.html">Profile</a>
+          <a href="/SWD42/Login/login.html" id="logoutBtn">Logout</a>
         </div>
       </div>
     </nav>
@@ -46,7 +46,9 @@
                   <div class="input_container">
                     <label for="deliveryaddress">Delivery Address:</label>
                     <select id="deliveryaddress">
-                        <option value="" disabled selected>Select Delivery Address</option>
+                        <option value="" selected>Select Delivery Address</option>
+                        <option value="123 Houston Street">123 Houston Street</option>
+                        <option value="234 Texas Lane">234 Texas Lane</option>
                     </select>
                   <div class="input_container">
                       <label for="deliverydate">Delivery Date:</label>
@@ -60,7 +62,7 @@
                       <label for="totaldue">Total Amount Due:</label>
                       <input type="number" name="totaldue" id="totaldue" readonly>
                   </div>
-                  <input type="submit" value="submit">
+                  <input type="submit" value="We are not accepting new requests at the moment. We apologize for the inconvenience.">
               </div>
           </form>
           
