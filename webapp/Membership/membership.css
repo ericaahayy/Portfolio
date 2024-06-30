@@ -142,7 +142,7 @@ header {
 }
 
 body {
-  background: url("/my_images/otter.jpg") no-repeat;
+  background: url("../my_images/otter.jpg") no-repeat;
   background-size: 100%;
 }
 

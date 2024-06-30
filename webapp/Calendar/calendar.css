@@ -289,7 +289,7 @@ header {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: url("/webapp/my_images/redpanda2.jpg") no-repeat;
+  background: url("../my_images/redpanda2.jpg") no-repeat;
   background-size: cover;
   background-position: center;
 }
