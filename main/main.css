@@ -42,11 +42,6 @@ header {
 
 }
 
-.number {
-  color: #536F9E;
-  font-size: 0.8em;;
-}
-
 .nav-item:hover {
   background-color: #1E202E;
   color: #536F9E;
@@ -63,7 +58,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   overflow-y: auto;
-  cursor: url(star.png), auto;
+  cursor: url(about/star.png), auto;
 }
 
 /* intro container start */
@@ -208,31 +203,57 @@ body {
 /* about container end */
 
 /* project container start */
-.projectsh3{
-  text-align: center;
-  color: rgb(146, 138, 193);
-  font-size: 40px;
-  padding-bottom: 45px;
-  font-weight: bold;
-}
-
 .project-container {
+  min-height: 100vh; 
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   text-align: left;
   color: rgb(146, 138, 193);
   font-size: 40px;
   font-family: 'DM Sans', sans-serif;
   justify-content: center;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+}
+
+.projects-title {
+  text-align: center;
+}
+
+.projects-title h3 {
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  padding-bottom: 35px;
+}
+
+.projects-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.projectsh3{
+  text-align: center;
+  color: rgb(146, 138, 193);
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .project:hover {
-  transform: scale(1.05);
+  transform: scale(1.15);
+  background-color: #1E202E;
+}
+
+.project.active {
+  background-color: #1E202E;
 }
 
 .project {
-  width: 300px;
+  width: 270px;
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -270,9 +291,11 @@ body {
 }
 
 .button-container {
+  max-height: 50px;
   display: flex;
   gap: 10px; 
   margin-top: 15px;
+  align-content: baseline;
 }
 
 .button {
@@ -340,7 +363,6 @@ body {
   vertical-align: middle;
 }
 /* contact container end */
-
 
 @keyframes glow {
   from {
