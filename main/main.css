@@ -63,7 +63,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   overflow-y: auto;
-  cursor: url('/about/star.png'), auto;
+  cursor: url(star.png), auto;
 }
 
 /* intro container start */
