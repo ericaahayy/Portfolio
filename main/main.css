@@ -17,6 +17,7 @@ header {
   justify-content: center;
   align-items: center;
   z-index: 99;
+
 }
 
 /* navigation bar start*/
@@ -25,6 +26,7 @@ header {
   justify-content: left;
   align-items: left;
   font-family: 'DM Sans', sans-serif;
+
 }
 
 .nav-item {
@@ -37,6 +39,7 @@ header {
   padding: 8px 2vw;
   border-radius: 5px;
   transition: all 0.3s ease;
+
 }
 
 .number {
@@ -60,6 +63,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   overflow-y: auto;
+  cursor: url('/about/star.png'), auto;
 }
 
 /* intro container start */
@@ -131,30 +135,41 @@ body {
 
 /* about container start */
 .about-container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
   height: auto;
-  min-height: 100vh;
+  min-height: 100vh; 
   position: relative; 
   display: flex;
-  justify-content: space-between; 
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center; 
-  padding: 5% 0;
-  text-align: left;
+  /* padding: 5% 0; */
+  margin: 10px;
   color: rgb(146, 138, 193);
   font-size: 4vw;
   font-family: 'DM Sans', sans-serif;
 }
 
 .photo {
-  flex: 1;
+  /* flex: 1; */
   overflow: hidden;
-  padding-left: 90px;
+  /* margin: 20px; */
+  /* width: 50%; */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex: 1;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content img {
+  width: 100%;
+  max-width: 500px;
 }
 
 .photo img {
-  width: 65%;
   height: auto;
   max-width: 500px;
   filter: brightness(70%);
@@ -166,20 +181,24 @@ body {
 }
 
 .description {
-  flex: 1;
-  padding-left: 90px;
-  display: flex;
+  width: 50%;
+  /* flex: 1; */
+  /* padding-left: 90px; */
   flex-direction: column; 
-  justify-content: flex-start; 
+  justify-content: center;
   align-items: center; 
+  text-align: left;
+  display: flex;
+  flex: 1;
 }
 
 .description h3{
+  margin-top: 20px;
   text-align: center;
   justify-content: center;
   align-items: center;
   font-size: 40px;
-  padding-bottom: 45px;
+  padding-bottom: 35px;
 }
 
 .description p{
@@ -332,7 +351,7 @@ body {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .about-container {
     flex-direction: column;
     align-items: center;
